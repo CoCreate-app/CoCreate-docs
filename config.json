@@ -1,0 +1,9 @@
+{
+    "directory": "../",
+    "ignores": [
+        "node_modules",
+        "vendor",
+        "bower_components",
+        "archive"
+    ]
+}
