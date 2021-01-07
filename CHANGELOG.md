@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.0.0...v1.0.1) (2021-01-07)
+
+
+### Bug Fixes
+
+* dummy commit to cause CI ([9f6895f](https://github.com/CoCreate-app/CoCreate-docs/commit/9f6895ff609fbf28722283d8452b773da2dce6ac))
+
 # 1.0.0 (2021-01-07)
 
 
