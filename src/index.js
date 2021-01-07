@@ -1,35 +1,29 @@
-const ExtractComment = require('./extract')
-const path = require('path')
+const CoCreateExtract = require('./extract')
 const fs = require('fs');
-const glob = require('glob');
-const config = require('../config.json');
+const { directory, ignores, extensions, socket} = require('../config.json');
+const {CoCreateSocketInit, CoCreateUpdateDocument, CoCreateCreateDocument } = require("./socket_process.js")
+/**
+ * Socket init 
+ */
+CoCreateSocketInit(socket)
 
-const directory = config.directory
-const ignoreFolders = config.ignores;
-
-
-const extractInstance = new ExtractComment()
-let result = {};
-const addtionalObject = {
-	collection: 'module_activity',
-	document_id: '_id',
-	name: 'test'
-}
-
-const files = glob.sync(directory + '/**/*.js', {});
-
-files.forEach((file) => {
-	var regex = new RegExp(ignoreFolders.join("|"), 'g');
-	if (!regex.test(file)) {
-		const docData = extractInstance.run(file, addtionalObject);
-		console.log(file);
-		if (docData.length > 0) {
-			const fileName = path.basename(file);
-			result[fileName] = docData
-		}
-	}
-})
-
+/**
+ * Extract comments
+ */
+let result = CoCreateExtract(directory, ignores, extensions);
 fs.writeFileSync('result.json', JSON.stringify(result), 'utf8')
 
+
+/**
+ * Store data into dab
+ */
+result.forEach((docs) => {
+	docs.forEach((doc) => {
+		if (!doc.document_id) {
+			CoCreateCreateDocument(doc, socket.config);		
+		} else {
+			CoCreateUpdateDocument(doc, socket.config);
+		}
+	})
+})
 
