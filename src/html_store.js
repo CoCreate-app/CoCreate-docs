@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('fs');
-const { sources, socket} = require(path.resolve(process.cwd(), 'html_config.json'));
+const { sources, socket} = require(path.resolve(process.cwd(), 'CoCreate.config.json'));
 
 const {CoCreateSocketInit, CoCreateUpdateDocument } = require("./socket_process.js")
 

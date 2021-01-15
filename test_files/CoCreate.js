@@ -334,20 +334,12 @@ const CoCreate = {
   /**
   @value_start
   updateDocument({
-    namespace: '',
-    room: '',
-    broadcast: true/false,
-    broadcast_sender: true/false,
-    
     collection: "test123",
     document_id: "document_id",
     data:{
-    	name1:“hello”,
-    	name2:  “hello1”
+    	example: “some example can be html json etc”,
+    	description:  “update documnets if document does not exist otherwise create”
     },
-    delete_fields:["name3", "name4"],
-    element: “xxxx”,
-    metaData: "xxxx"
   })
   @value_end
   */
