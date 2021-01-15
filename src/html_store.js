@@ -9,7 +9,6 @@ const {CoCreateSocketInit, CoCreateUpdateDocument } = require("./socket_process.
  */
 CoCreateSocketInit(socket);
 
-
 /**
  * Store data into dab
  */
