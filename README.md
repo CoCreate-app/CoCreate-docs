@@ -1,7 +1,6 @@
 # CoCreate-docs
 A simple HTML5 and pure javascript component. Easy configuration using data-attributes and highly styleable.
 
-
 ![GitHub file size in bytes](https://img.shields.io/github/size/CoCreate-app/CoCreate-docs/dist/CoCreate-docs.min.js?label=minified%20size&style=for-the-badge) 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/CoCreate-app/CoCreate-docs?style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/CoCreate-app/CoCreate-docs?style=for-the-badge) 
