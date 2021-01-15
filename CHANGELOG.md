@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.0.1...v1.0.2) (2021-01-15)
+
+
+### Bug Fixes
+
+* (update config path) ([83e1dd3](https://github.com/CoCreate-app/CoCreate-docs/commit/83e1dd3d16344df377c0d17af2dac46a76e76c46))
+* (update config path) ([558eddc](https://github.com/CoCreate-app/CoCreate-docs/commit/558eddc10e7a1242feec163b504337af9e1fe0b3))
+
 ## [1.0.1](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.0.0...v1.0.1) (2021-01-07)
 
 
