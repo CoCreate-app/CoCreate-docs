@@ -12,7 +12,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js",
-    "html": "node src/html_store.js",
+    "docs": "node src/html_store.js",
     "build": "node src/index.js"
   },
   "private": false,
