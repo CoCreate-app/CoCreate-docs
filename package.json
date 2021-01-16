@@ -1,13 +1,12 @@
 {
   "name": "@cocreate/docs",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Documentation generator ",
   "keywords": [
-      "cocreate",
-      "lowcode",
-      "doc-generator"
+    "cocreate",
+    "lowcode",
+    "doc-generator"
   ],
-
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
