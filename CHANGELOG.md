@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.0.3...v1.0.4) (2021-01-16)
+
+
+### Bug Fixes
+
+* (merge html and commit extractor to one with one config) ([24be390](https://github.com/CoCreate-app/CoCreate-docs/commit/24be3901f90b360643ad5a8421e1ce05f2a8bc4f))
+
 ## [1.0.3](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.0.2...v1.0.3) (2021-01-15)
 
 
