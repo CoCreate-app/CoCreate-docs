@@ -1,3 +1,11 @@
+## [1.0.5](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.0.4...v1.0.5) (2021-01-18)
+
+
+### Bug Fixes
+
+* (replace json config with js) ([7fb3c83](https://github.com/CoCreate-app/CoCreate-docs/commit/7fb3c8350e4f9b45835b6c444c588ba3708e6579))
+* (replace json config with js) ([1201389](https://github.com/CoCreate-app/CoCreate-docs/commit/12013892505c3c26c2cb12509d5bd85c45be4f5b))
+
 ## [1.0.4](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.0.3...v1.0.4) (2021-01-16)
 
 
