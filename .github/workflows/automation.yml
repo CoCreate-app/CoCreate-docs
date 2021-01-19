@@ -6,35 +6,24 @@ on:
   create:
 
 jobs:
-  changelog:
+  updateKeyword:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
-      # debuging action
-      # - name: Setup tmate session
-      #   uses: mxschmitt/action-tmate@v3
-      
-      
-      # - uses: actions/setup-node@v1
-      #   with:
-      #     node-version: 12
-      #     registry-url: https://npm.pkg.github.com/
-      #     scope: '@cocreate-app'
-      # - run: npm publish --access=public
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{secrets.GITHUB}}
-            
           
-  # Overwrite description and keyworkds
+  # overwrite description and keyworkds
       - name: Jaid/action-sync-node-meta
         uses: jaid/action-sync-node-meta@v1.4.0
         with:
           direction: overwrite-github # default is overwrite-file
           githubToken: ${{ secrets.GITHUB }}
-  
-  # Auto Changlog generator
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+  # Auto Changog generator
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2
         with:
@@ -46,16 +35,46 @@ jobs:
             @semantic-release/github
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      
-      - name: setup nodejs
-        uses: actions/setup-node@v2
-        with:
-          node-version: 'v10.16.0'
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}  # Auto Changog generator
+        
+        
+        
+           
+  cdn:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
           
-      # - name: build production version
       - run: yarn install --frozen-lockfile
+      - run: yarn build
 
+      - uses: CoCreate-app/CoCreate-s3@master
+        with:
+          aws-key-id: ${{ secrets.AWSACCESSKEYID }}
+          aws-access-key: ${{ secrets.AWSSECERTACCESSKEY }}
+          source: './dist/CoCreate-docs.min.js'
+      
+
+      
       - name: update documentation
-        run: npm run html
+        run: npm run docs
 
+
+
+  #     - name: setup nodejs
+  #       uses: actions/setup-node@v2
+  #       with:
+  #         node-version: 'v14.15.4'
+            # debuging action
+      # - name: Setup tmate session
+        # uses: mxschmitt/action-tmate@v3
+      # - name: build production version
+
+
+      # - name: upload to s3
+      #   run: npm run s3 
+      #   env:
+      #     AWSKEYID: ${{ secrets.AWSKEYID }}
+      #     AWSACCESSKEY: ${{ secrets.AWSACCESSKEY }}
+      #     DIST_FILE_NAME: './dist/CoCreate-styles.min.js'
