@@ -31,6 +31,9 @@ result.forEach((docs) => {
 /**
  * update document by config sources
  */
+
+
+
 sources.forEach(({path, collection, document_id, name, category, ...rest}) => {
 	if (!path) return;
 	let content = fs.readFileSync(path, 'utf8');
