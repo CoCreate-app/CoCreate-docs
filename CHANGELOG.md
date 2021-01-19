@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.0.5...v1.0.6) (2021-01-19)
+
+
+### Bug Fixes
+
+* (fixed issue with bug causeing docs not to run) ([79a381a](https://github.com/CoCreate-app/CoCreate-docs/commit/79a381a59972ba53634d3819d2bb45c2414320df))
+
 ## [1.0.5](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.0.4...v1.0.5) (2021-01-18)
 
 
