@@ -1,17 +1,18 @@
 {
   "name": "@cocreate/docs",
-  "version": "1.0.4",
+  "version": "1.0.1",
   "description": "Documentation generator ",
   "keywords": [
-    "cocreate",
-    "lowcode",
-    "doc-generator"
+      "cocreate",
+      "lowcode",
+      "doc-generator"
   ],
+
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js",
-    "docs": "node src/html_store.js",
+    "docs": "node src/index.js",
     "build": "node src/index.js"
   },
   "private": false,

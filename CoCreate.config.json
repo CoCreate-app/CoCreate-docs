@@ -8,24 +8,22 @@
         "host": "server.cocreate.app:8088"
     },
 
-//  Source files to upload to CoCreate
     "sources": [
         {
-            "path": "./src/index.html",
+            "path": "./test_files/test.html",
             "collection": "module-views",
             "document_id": "5f08bf3da588c11bf8ead4b3",
-            "name": "html",
+            "name": "html"
         }, 
         {
             "collection":"website-pages",
             "document_id":"",
             "name":"html",
             "domains":["ws.cocreate.app"],
-            "route":"/signup",
-        },
-    ]
+            "route":"/signup"
+        }
+    ],
 
-//  Directory to parse for comments and upload to CoCreate
     "directory": "./test_files/",
     "extensions": [
         "js",
@@ -37,5 +35,5 @@
         "vendor",
         "bower_components",
         "archive"
-    ],
+    ]
 }

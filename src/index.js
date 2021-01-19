@@ -1,21 +1,8 @@
 const CoCreateExtract = require('./extract')
 const fs = require('fs');
 const path = require('path');
-
-let config;
-
-let jsConfig = path.resolve(process.cwd(), 'CoCreate.config.js');
-let jsonConfig = path.resolve(process.cwd(), 'CoCreate.config.json')
-if (fs.exists(jsConfig))
-	config = require(jsConfig);
-else
-	config = require(jsonConfig);
-
-
-
-const { directory, ignores, extensions, socket, sources } = config;
-
-const { CoCreateSocketInit, CoCreateUpdateDocument, CoCreateCreateDocument } = require("./socket_process.js")
+const { directory, ignores, extensions, socket, sources} = require(path.resolve(process.cwd(), 'CoCreate.config.json'));
+const {CoCreateSocketInit, CoCreateUpdateDocument, CoCreateCreateDocument } = require("./socket_process.js")
 /**
  * Socket init 
  */
@@ -34,9 +21,8 @@ fs.writeFileSync('result.json', JSON.stringify(result), 'utf8')
 result.forEach((docs) => {
 	docs.forEach((doc) => {
 		if (!doc.document_id) {
-			CoCreateCreateDocument(doc, socket.config);
-		}
-		else {
+			CoCreateCreateDocument(doc, socket.config);		
+		} else {
 			CoCreateUpdateDocument(doc, socket.config);
 		}
 	})
@@ -45,7 +31,8 @@ result.forEach((docs) => {
 /**
  * update document by config sources
  */
-sources.forEach(({ path, collection, document_id, name, category, ...rest }) => {
+sources.forEach(({path, collection, document_id, name, category, ...rest}) => {
+	if (!path) return;
 	let content = fs.readFileSync(path, 'utf8');
 	if (content) {
 		CoCreateUpdateDocument({
@@ -60,3 +47,4 @@ sources.forEach(({ path, collection, document_id, name, category, ...rest }) => 
 		}, socket.config);
 	}
 })
+
