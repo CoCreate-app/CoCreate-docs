@@ -66,7 +66,7 @@ class ExtractComment {
 
 const extractInstance = new ExtractComment()
 
-function CoCreateExtract (directory, ignoreFolders, extensions) {
+function CoCreateExtract (directory, ignoreFolders, extensions ) {
 
 	extensions = extensions.join(',');
 	ignoreFolders = ignoreFolders.join('|');
