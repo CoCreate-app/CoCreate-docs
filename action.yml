@@ -9,7 +9,7 @@ outputs:
     description: 'successful'
 runs:
   using: 'node12'
-  main: './src/CoCreate-docs.js'
+  main: 'src/CoCreate-docs.js'
    
 
  

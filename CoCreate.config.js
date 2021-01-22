@@ -9,17 +9,16 @@ module.exports = {
     },
 
     sources: [{
-            path: "./src/index.html",
-            collection: "module-views",
+            path: "./test_files/test.html",
+            collection: "static_html",
             document_id: "5f08bf3da588c11bf8ead4b3",
             name: "html",
         },
         {
-            collection: "website-pages",
+            collection: "test",
             document_id: "",
-            name: "html",
-            domains: ["ws.cocreate.app"],
-            route: "/signup",
+            domains: ["cocreate.app"],
+            route: "/docs/boilerplate",
         }
     ],
 

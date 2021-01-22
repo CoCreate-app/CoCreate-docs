@@ -67,15 +67,27 @@ class ExtractComment {
 const extractInstance = new ExtractComment()
 
 function CoCreateExtract (directory, ignoreFolders, extensions ) {
+	let extensionsStr = "*";
+	let ignoreFolderStr = "";
 
-	extensions = extensions.join(',');
-	ignoreFolders = ignoreFolders.join('|');
+	if (extensions && extensions.length > 0) {
+		extensionsStr = extensions.join(',');
+	}
+	
+	if (ignoreFolders && ignoreFolders.length > 0) {
+		ignoreFolderStr = ignoreFolders.join('|');
+	}
+
 	let result = [];
-
-	const files = glob.sync(directory + `/**/*.{${extensions}}`, {});
+	
+	if (!directory) {
+		directory = ".";
+	}
+	
+	const files = glob.sync(directory + `/**/*.{${extensionsStr}}`, {});
 	
 	files.forEach((file) => {
-		var regex = new RegExp(ignoreFolders, 'g');
+		var regex = new RegExp(ignoreFolderStr, 'g');
 		if (!regex.test(file)) {
 			const docData = extractInstance.run(file, 'docs', 'description');
 			if (docData.length > 0) {
