@@ -69,16 +69,17 @@ if (crud) {
  * Store html files by config sources
  **/
 if (sources) {
-	sources.forEach(({path, collection, document_id, data}) => {
+	sources.forEach(({path, collection, document_id, key, data}) => {
 		if (!path) return;
 		
 		let content = fs.readFileSync(path, 'utf8');
-		const {name, ...rest} = data;
 
-		if (content && name && collection) {
+		if (content && key && collection) {
+			if (!data) data = {};
+			
 			let storeData = {
-				[name]: content,
-				...rest
+				[key]: content,
+				...data
 			};
 			if (!document_id) {
 				CoCreateCreateDocument({

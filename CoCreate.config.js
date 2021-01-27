@@ -11,8 +11,8 @@ module.exports = {
             path: "./test_files/test.html",
             collection: "static_html",
             document_id: "5f08bf3da588c11bf8ead4b3",
+            key: "html",
             data:{
-                name: "html",
                 description:"test descrition"
             }
         },
@@ -23,8 +23,6 @@ module.exports = {
             collection: "test",
             document_id: "6010e012f80ce138be7eed01",
             data:{
-                // collection: "test",
-                // document_id: "",
                 domains: ["cocreate.app"],
                 route: "/docs/boilerplate",
             }

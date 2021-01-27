@@ -2,8 +2,14 @@ name: CI
 
 on:
   push:
+    branches:
+    - master
   pull_request:
+    branches:
+    - master
   create:
+    branches:
+    - master
 
 jobs:
   updateKeyword:
@@ -12,18 +18,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
           
-  # overwrite description and keyworkds
       - name: Jaid/action-sync-node-meta
         uses: jaid/action-sync-node-meta@v1.4.0
         with:
           direction: overwrite-github # default is overwrite-file
           githubToken: ${{ secrets.GITHUB }}
+  
   ci:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-  # Auto Changog generator
+
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2
         with:
@@ -36,45 +42,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}  # Auto Changog generator
-        
-        
-        
            
-  cdn:
+  docs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-          
-      - run: yarn install --frozen-lockfile
-      - run: yarn build
-
-      - uses: CoCreate-app/CoCreate-s3@master
-        with:
-          aws-key-id: ${{ secrets.AWSACCESSKEYID }}
-          aws-access-key: ${{ secrets.AWSSECERTACCESSKEY }}
-          source: './dist/CoCreate-docs.min.js'
-      
-
       
       - name: update documentation
-        run: npm run docs
-
-
-
-  #     - name: setup nodejs
-  #       uses: actions/setup-node@v2
-  #       with:
-  #         node-version: 'v14.15.4'
-            # debuging action
-      # - name: Setup tmate session
-        # uses: mxschmitt/action-tmate@v3
-      # - name: build production version
-
-
-      # - name: upload to s3
-      #   run: npm run s3 
-      #   env:
-      #     AWSKEYID: ${{ secrets.AWSKEYID }}
-      #     AWSACCESSKEY: ${{ secrets.AWSACCESSKEY }}
-      #     DIST_FILE_NAME: './dist/CoCreate-styles.min.js'
+        uses: CoCreate-app/CoCreate-docs@master
+          
