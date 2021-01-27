@@ -98,4 +98,6 @@ if (sources) {
 	})
 }
 
+process.exit()
+
 
