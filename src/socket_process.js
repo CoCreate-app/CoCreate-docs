@@ -1,12 +1,12 @@
 const CoCreateSocket = require('./CoCreate-socket')
 
-module.exports.CoCreateSocketInit = function (socket) {
+module.exports.CoCreateSocketInit = function (config) {
 	CoCreateSocket.create({
-		namespace: socket.config.organization_Id,
+		namespace: config.organization_Id,
 		room: null,
-		host: socket.host
+		host: config.host
 	})
-	CoCreateSocket.setGlobalScope(socket.config.organization_Id);
+	CoCreateSocket.setGlobalScope(config.organization_Id);
 }
 
 module.exports.CoCreateUpdateDocument = function (info, config) {
