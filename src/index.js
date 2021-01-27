@@ -98,6 +98,8 @@ if (sources) {
 	})
 }
 
-process.exit()
+setTimeout(function(){
+	process.exit()
+}, 1000 * 60)
 
 
