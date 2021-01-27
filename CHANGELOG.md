@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.0.7...v1.0.8) (2021-01-27)
+
+
+### Bug Fixes
+
+* Parsing error resolved ([119f7f2](https://github.com/CoCreate-app/CoCreate-docs/commit/119f7f2878195d499e9ec76c7bac39bf11f88332))
+
 ## [1.0.7](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.0.6...v1.0.7) (2021-01-21)
 
 
