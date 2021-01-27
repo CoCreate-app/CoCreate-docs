@@ -22,6 +22,10 @@ module.exports.CoCreateUpdateDocument = function (info, config) {
 	
 	if (!info.collection || !info.document_id ) return;
 	
+	if (!info.data.organization_id) {
+		info.data.organization_id = config.organization_Id;
+	}
+
 	request_data['set'] = info.data;
 	request_data['collection'] = info.collection
 	request_data['document_id'] = info.document_id
@@ -41,7 +45,11 @@ module.exports.CoCreateCreateDocument = function (info, config) {
       "organization_id":  config.organization_Id,
 	}
 	
+	if (!info.data.organization_id) {
+		info.data.organization_id = config.organization_Id;
+	}
 	let request_data = {...info, ...commonParams};
+
 	CoCreateSocket.send('createDocument', request_data, '')
 }
 
