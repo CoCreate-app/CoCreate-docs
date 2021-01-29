@@ -100,6 +100,6 @@ if (sources) {
 
 setTimeout(function(){
 	process.exit()
-}, 1000 * 60)
+}, 1000 * 30)
 
 

@@ -12,7 +12,7 @@ module.exports = {
             document_id: "601460b19f64ba1680b8669b",
             key: "html",
             data:{
-                name: "Docs",
+                name: "Document Generator Docs",
             }
         },
     ],
