@@ -6,29 +6,30 @@ module.exports = {
         host: "server.cocreate.app:8088"
     },
  
-    sources: [
-        {
-            path: "./test_files/test.html",
-            collection: "static_html",
-            document_id: "5f08bf3da588c11bf8ead4b3",
+    sources: [{
+            path: "./docs/index.html",
+            collection: "files",
+            document_id: "",
             key: "html",
             data:{
-                description:"test descrition"
+                name: "Actions Doc",
             }
         },
     ],
    
-    crud: [
-        {
-            collection: "test",
-            document_id: "6010e012f80ce138be7eed01",
+    crud: [{
+            collection: "routes",
+            document_id: "",
             data:{
-                domains: ["cocreate.app"],
-                route: "/docs/boilerplate",
+                collection: "files",
+                document_id: "",
+                name: "html",
+                domains: ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
+                route: "/docs/actions",
             }
         }
     ],
-    
+
     extract: {
         directory: "./test_files/",
         extensions: [
