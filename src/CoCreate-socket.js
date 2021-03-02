@@ -6,7 +6,7 @@ location.protocol = "";
 
 const CoCreateSocket = {
 	sockets : new Map(),
-	prefix  : "crud",
+	prefix  : "ws",
 	listeners: new Map(),
 	messageQueue: new Map(),
 	
