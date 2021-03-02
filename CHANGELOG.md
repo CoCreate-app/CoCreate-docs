@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.0.8...v1.1.0) (2021-03-02)
+
+
+### Features
+
+* support for multiple sources ([b5052c0](https://github.com/CoCreate-app/CoCreate-docs/commit/b5052c0238ea71315d9cabcb21e695b0feba45d4))
+
 ## [1.0.8](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.0.7...v1.0.8) (2021-01-27)
 
 
