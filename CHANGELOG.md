@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.1.0...v1.1.1) (2021-03-02)
+
+
+### Bug Fixes
+
+* socket path crud to ws ([593fb87](https://github.com/CoCreate-app/CoCreate-docs/commit/593fb87a3e437086f4a10b45a398687fd0572aea))
+
 # [1.1.0](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.0.8...v1.1.0) (2021-03-02)
 
 
