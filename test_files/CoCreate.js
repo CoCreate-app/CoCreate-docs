@@ -26,7 +26,7 @@ function initDeleteTags() {
       documentId = this.getAttribute('data-document_id');
 
       if (document) {
-        CoCreate.deleteDocument({
+        CoCreate.crud.deleteDocument({
           'collection': collection, 
           'document_id': documentId,
           'metadata': '' 
@@ -483,8 +483,8 @@ const CoCreate = {
     if (!id) return;
     if (CoCreateCrdt.getType(id)) {
       let oldData = CoCreateCrdt.getType(id).toString();
-      CoCreateCrdt.deleteData(id, 0, Math.max(oldData.length, info.value.length));
-      CoCreateCrdt.insertData(id, 0, info.value);
+      CoCreatecrdt.deleteText(id, 0, Math.max(oldData.length, info.value.length));
+      CoCreatecrdt.insertText(id, 0, info.value);
     } else {
       this.updateDocument({
         collection: info.collection,
@@ -539,7 +539,7 @@ const CoCreate = {
   
   
   /*
-  CoCreate.insertDataCrdt({
+  CoCreate.crdt.insertText({
   	collection: 'module_activities',
   	document_id: '5e4802ce3ed96d38e71fc7e5',
   	name: 'name',
@@ -553,7 +553,7 @@ const CoCreate = {
         this.validateKeysJson(info,['collection','document_id','name','value','position']);
         let id = this.__getYDocId(info['collection'], info['document_id'], info['name'])
         if (id) {
-          CoCreateCrdt.insertData(id, info['position'], info['value'], info['attributes']);
+          CoCreatecrdt.insertText(id, info['position'], info['value'], info['attributes']);
         }
       }
       catch (e) {
@@ -563,7 +563,7 @@ const CoCreate = {
   
   
   /*
-  CoCreate.deleteDataCrdt({
+  CoCreate.crdt.deleteText({
   	collection: 'module_activities',
   	document_id: '5e4802ce3ed96d38e71fc7e5',
   	name: 'name',
@@ -576,7 +576,7 @@ const CoCreate = {
       this.validateKeysJson(info,['collection','document_id','name', 'position','length']);
       let id = this.__getYDocId(info['collection'], info['document_id'], info['name'])
       if (id) {
-        CoCreateCrdt.deleteData(id, info['position'], info['length']);
+        CoCreatecrdt.deleteText(id, info['position'], info['length']);
       }
     }
     catch (e) {
@@ -586,7 +586,7 @@ const CoCreate = {
   
   
   /*
-  CoCreate.getDataCrdt({
+  CoCreate.crdt.getText({
   	collection: 'module_activities',
   	document_id: '5e4802ce3ed96d38e71fc7e5',
   	name: 'name'
