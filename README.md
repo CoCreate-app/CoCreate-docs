@@ -9,7 +9,7 @@ A simple docs component in vanilla javascript. Easily configured using HTML5 dat
 
 ![CoCreate-docs](https://cdn.cocreate.app/docs/CoCreate-docs.gif)
 
-## [Docs & Demo](https://cocreate.app/docs/clone)
+## [Docs & Demo](https://cocreate.app/docs/docs)
 
 For a complete guide and working demo refer to the [doumentation](https://cocreate.app/docs/docs)
 
