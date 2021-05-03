@@ -94,7 +94,7 @@ if (crud) {
  * Store html files by config sources
  **/
 if (sources) {
-	sources.forEach(async ({path, collection, document_id, key, data}) => {
+	sources.forEach(async ({entry, collection, document_id, key, data}) => {
 		if (!path) return;
 
 		let content = fs.readFileSync(path, 'utf8');
