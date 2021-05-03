@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.1.5...v1.1.6) (2021-05-03)
+
+
+### Bug Fixes
+
+* upate path to entry ([bfa4899](https://github.com/CoCreate-app/CoCreate-docs/commit/bfa489915bf2d2429580095eca631f1a7b0bdd54))
+
 ## [1.1.5](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.1.4...v1.1.5) (2021-04-27)
 
 
