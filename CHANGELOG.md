@@ -1,3 +1,10 @@
+## [1.1.8](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.1.7...v1.1.8) (2021-05-08)
+
+
+### Bug Fixes
+
+* suport for sources ([6c5e306](https://github.com/CoCreate-app/CoCreate-docs/commit/6c5e3066fb0950141c6fb766c04b32e2596ebf79))
+
 ## [1.1.7](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.1.6...v1.1.7) (2021-05-08)
 
 
