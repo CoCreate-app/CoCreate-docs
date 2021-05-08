@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.1.6...v1.1.7) (2021-05-08)
+
+
+### Bug Fixes
+
+* Exit process after specified timeout ([04bcd6a](https://github.com/CoCreate-app/CoCreate-docs/commit/04bcd6a68eee40bdc18cc84047e7de55c7a54e49))
+
 ## [1.1.6](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.1.5...v1.1.6) (2021-05-03)
 
 
