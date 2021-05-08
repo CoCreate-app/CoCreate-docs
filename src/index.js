@@ -93,22 +93,22 @@ if (extract) {
 /**
  * Store html files by config sources
  **/
-// if (sources) {
-// 	sources.forEach(async ({entry, collection, document_id, key, data}) => {
-// 		if (!path) return;
+if (sources) {
+	sources.forEach(async ({entry, collection, document_id, key, data}) => {
+		if (!path) return;
 
-// 		let content = fs.readFileSync(path, 'utf8');
+		let content = fs.readFileSync(path, 'utf8');
 
-// 		if (content && key && collection) {
-// 			if (!data) data = {};
-// 			let storeData = {
-// 				[key]: content,
-// 				...data
-// 			};
-// 			await runStore({collection, document_id, data: storeData}, 'sources');
-// 		}
-// 	})
-// }
+		if (content && key && collection) {
+			if (!data) data = {};
+			let storeData = {
+				[key]: content,
+				...data
+			};
+			await runStore({collection, document_id, data: storeData}, 'sources');
+		}
+	})
+}
 
 console.log('end....')
 
