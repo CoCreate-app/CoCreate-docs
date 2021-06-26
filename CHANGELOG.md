@@ -1,3 +1,10 @@
+## [1.1.23](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.1.22...v1.1.23) (2021-06-26)
+
+
+### Bug Fixes
+
+* test docker build ([37156c2](https://github.com/CoCreate-app/CoCreate-docs/commit/37156c209e4fb4cef129e2ed72c102cab199bf5d))
+
 ## [1.1.22](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.1.21...v1.1.22) (2021-06-26)
 
 
