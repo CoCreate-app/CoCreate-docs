@@ -55,7 +55,7 @@ jobs:
     needs: release
     if: needs.release.outputs.new_release_published == 'true'
     env:
-      IMAGE: docker.pkg.github.com/cocreate-app/cocreate-docs
+      IMAGE: docker.pkg.github.com/cocreate-app/cocreate-docs/cocreate-docs
       VERSION: ${{ needs.release.outputs.new_release_version }}
     steps:
       - name: Checkout repository
