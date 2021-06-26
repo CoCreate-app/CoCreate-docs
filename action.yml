@@ -11,7 +11,7 @@ runs:
   # using: 'node12'
   # main: './src/index.js'
   using: 'docker'
-  image: 'docker://frankpagan/cocreate-docs'
- 
+  image: 'docker://cocreateapps/cocreate-docs'
+  # image: 'docker://docker.pkg.github.com/cocreate-app/cocreate-docs/cocreate-docs:1.1.19'
  
  
