@@ -5,6 +5,6 @@ ENV NODE_ENV=production
 WORKDIR /usr/src/app
 
 COPY . /usr/src/app/
-RUN npm install
+RUN yarn install
 
-CMD [ "npm", "start" ]
+CMD [ "yarn", "start" ]
