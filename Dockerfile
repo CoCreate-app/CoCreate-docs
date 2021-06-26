@@ -6,5 +6,5 @@ WORKDIR /usr/src/app
 
 COPY . /usr/src/app/
 RUN yarn install
-
+RUN yarn add webpack-cli
 CMD [ "yarn", "start" ]
