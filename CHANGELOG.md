@@ -1,3 +1,10 @@
+## [1.1.25](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.1.24...v1.1.25) (2021-06-29)
+
+
+### Bug Fixes
+
+* test new build ([0f3e5af](https://github.com/CoCreate-app/CoCreate-docs/commit/0f3e5afd01b60b4153eaf896c47a9a89c351f00a))
+
 ## [1.1.24](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.1.23...v1.1.24) (2021-06-29)
 
 
