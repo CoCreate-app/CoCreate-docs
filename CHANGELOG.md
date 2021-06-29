@@ -1,3 +1,10 @@
+## [1.1.26](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.1.25...v1.1.26) (2021-06-29)
+
+
+### Bug Fixes
+
+* Action deployed from docker ([a7b3b16](https://github.com/CoCreate-app/CoCreate-docs/commit/a7b3b16e815f49abb0633ed09c16571872bf1696))
+
 ## [1.1.25](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.1.24...v1.1.25) (2021-06-29)
 
 
