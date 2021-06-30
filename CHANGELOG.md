@@ -1,3 +1,10 @@
+## [1.1.29](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.1.28...v1.1.29) (2021-06-30)
+
+
+### Bug Fixes
+
+* Update readme.md ([0abd507](https://github.com/CoCreate-app/CoCreate-docs/commit/0abd5072800b5ddecfee8b19fc0ce302f876ac5e))
+
 ## [1.1.28](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.1.27...v1.1.28) (2021-06-30)
 
 
