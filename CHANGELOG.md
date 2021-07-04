@@ -1,3 +1,10 @@
+## [1.1.30](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.1.29...v1.1.30) (2021-07-04)
+
+
+### Bug Fixes
+
+* update docker file to run app ([a98978a](https://github.com/CoCreate-app/CoCreate-docs/commit/a98978a9efd6059dff21f1a06a128b31413cb84d))
+
 ## [1.1.29](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.1.28...v1.1.29) (2021-06-30)
 
 
