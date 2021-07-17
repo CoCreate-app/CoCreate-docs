@@ -1,3 +1,10 @@
+## [1.1.34](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.1.33...v1.1.34) (2021-07-17)
+
+
+### Bug Fixes
+
+* workflows ([71f2586](https://github.com/CoCreate-app/CoCreate-docs/commit/71f2586d0fca4c9bd06cc3fbca9c048024b2e723))
+
 ## [1.1.33](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.1.32...v1.1.33) (2021-07-14)
 
 
