@@ -20,10 +20,10 @@ function initDeleteTags() {
     dTag.addEventListener('click', function(e) {
       e.preventDefault();
       
-      var collection = this.getAttribute('data-collection') || 'module_activity';
+      var collection = this.getAttribute('collection') || 'module_activity';
       var documentId;
       
-      documentId = this.getAttribute('data-document_id');
+      documentId = this.getAttribute('document_id');
 
       if (document) {
         CoCreate.crud.deleteDocument({
