@@ -1,6 +1,6 @@
 // -8
 const CoCreateAction = {
-  attribute: 'data-actions',
+  attribute: 'actions',
   actions: {},
   selectedStage: [],
   stageIndex: 0,
@@ -21,7 +21,7 @@ const CoCreateAction = {
 			return;
 		}
 		
-		let buttons = __container.querySelectorAll("[data-actions]");
+		let buttons = __container.querySelectorAll("[actions]");
 
 		for (let i = 0; i < buttons.length; i++) {
 		  this.actionButtonEvent(buttons[i]);
@@ -30,7 +30,7 @@ const CoCreateAction = {
   
   actionButtonEvent: function(btn) {
     const _this = this;    
-	  let checkActions = btn.getAttribute('data-actions') || "";
+	  let checkActions = btn.getAttribute('actions') || "";
 	  checkActions = checkActions.replace(/\s/g, '').split(',');
 	  
 	  if (checkActions.length == 0) {
