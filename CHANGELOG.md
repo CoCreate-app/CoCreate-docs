@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.2.1...v1.2.2) (2021-08-14)
+
+
+### Bug Fixes
+
+* update to  docs ([41ffb09](https://github.com/CoCreate-app/CoCreate-docs/commit/41ffb09992632ec76609019cf3312ccaa6be0332))
+
 ## [1.2.1](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.2.0...v1.2.1) (2021-08-02)
 
 
