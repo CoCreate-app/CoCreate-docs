@@ -1,3 +1,10 @@
+## [1.2.13](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.2.12...v1.2.13) (2021-09-09)
+
+
+### Bug Fixes
+
+* remove cdn from workflow ([db82062](https://github.com/CoCreate-app/CoCreate-docs/commit/db82062407570d9698099ee7e546dafe03476979))
+
 ## [1.2.12](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.2.11...v1.2.12) (2021-09-09)
 
 
