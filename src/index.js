@@ -60,7 +60,7 @@ async function runStore (info, type) {
 		if (status) {
 			let response = await CoCreateCrud.listenAsync(event)
 			console.log('type ------------------------- ', type)
-			console.log(response)
+			// console.log(response)
 			return response;
 		}
 	} catch (err) {
@@ -128,7 +128,7 @@ if (sources) {
 	
 	runSources().then((data) => {
 		
-		console.log(data)
+		// console.log(data)
 		let new_config = {
 			config: socketConfig,
 			sources: new_sources_list,
