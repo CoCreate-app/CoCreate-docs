@@ -1,3 +1,10 @@
+## [1.2.17](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.2.16...v1.2.17) (2021-09-09)
+
+
+### Bug Fixes
+
+* create docker image to use for workflows ([74e55e9](https://github.com/CoCreate-app/CoCreate-docs/commit/74e55e9b3b9e1a9185f54f04a67dd68c75699254))
+
 ## [1.2.16](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.2.15...v1.2.16) (2021-09-09)
 
 
