@@ -1,3 +1,11 @@
+## [1.2.12](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.2.11...v1.2.12) (2021-09-09)
+
+
+### Bug Fixes
+
+* parse and push sources to db ([9f843c0](https://github.com/CoCreate-app/CoCreate-docs/commit/9f843c048d884d92fa2615f25377e87ddb4bc34f))
+* remove testing  console.logs ([a4d5f06](https://github.com/CoCreate-app/CoCreate-docs/commit/a4d5f066dbd991d838d90bde020f755889ee339d))
+
 ## [1.2.11](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.2.10...v1.2.11) (2021-09-09)
 
 
