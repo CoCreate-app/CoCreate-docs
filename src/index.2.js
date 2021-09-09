@@ -1,6 +1,7 @@
 const CoCreateCrud = require('@cocreate/crud-client')
 const CoCreateSocket = require('@cocreate/socket-client')
 const mime = require('mime-types')
+const CoCreateExtract = require('./extract')
 
 const fs = require('fs');
 const path = require('path');
@@ -18,8 +19,8 @@ else {
 	console.log('config not found.')
 }
 
+// const { crud, extract, sources, config : socketConfig } = config;
 const { crud, sources, config : socketConfig } = config;
-
 console.log(config)
 
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
@@ -60,7 +61,7 @@ async function runStore (info, type) {
 		if (status) {
 			let response = await CoCreateCrud.listenAsync(event)
 			console.log('type ------------------------- ', type)
-			console.log(response)
+			// console.log(response)
 			return response;
 		}
 	} catch (err) {
@@ -128,7 +129,7 @@ if (sources) {
 	
 	runSources().then((data) => {
 		
-		console.log(data)
+		// console.log(data)
 		let new_config = {
 			config: socketConfig,
 			sources: new_sources_list,
@@ -144,8 +145,42 @@ if (sources) {
 	})
 }
 
+/**
+ * Extract comments and store into db
+ */
+// if (extract) {
+// 	let result = CoCreateExtract(extract.directory, extract.ignores, extract.extensions);
+// 	fs.writeFileSync('result.json', JSON.stringify(result), 'utf8')
+	
+// 	result.forEach((docs) => {
+// 		docs.forEach(async(doc) => {
+// 			if (!doc.collection) return;
+// 			await runStore(doc, 'extract')
+// 		})
+// 	})
+// }
+
+/**
+ * update and create document by config crud
+ */
+
+// if (crud) {
+// 	crud.forEach(async (info) => {
+// 		await runStore(info, 'crud')
+// 	})
+// }
+
+/**
+ * Store html files by config sources
+ **/
+
+
 console.log('end....')
 
 setTimeout(function(){
 	process.exit()
 }, 1000 * 60)
+
+
+
+
