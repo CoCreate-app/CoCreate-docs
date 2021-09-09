@@ -1,6 +1,6 @@
 const CoCreateCrud = require('@cocreate/crud-client')
 const CoCreateSocket = require('@cocreate/socket-client')
-const mime = require('mime-types')
+
 const CoCreateExtract = require('./extract')
 
 const fs = require('fs');
@@ -8,21 +8,18 @@ const path = require('path');
 let config;
 
 let jsConfig = path.resolve(process.cwd(), 'CoCreate.config.js');
-// let jsonConfig = path.resolve(process.cwd(), 'CoCreate.config.json')
+let jsonConfig = path.resolve(process.cwd(), 'CoCreate.config.json')
 if (fs.existsSync(jsConfig))
 	config = require(jsConfig);
-// else if (fs.existsSync(jsonConfig)) {
-// 	config = require(jsonConfig)
-// }
+else if (fs.existsSync(jsonConfig)) {
+	config = require(jsonConfig)
+}
 else {
 	process.exit()
 	console.log('config not found.')
 }
 
 const { crud, extract, sources, config : socketConfig } = config;
-console.log(config)
-
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 
 /** init cocreatecrud and socket **/
 let socket = new CoCreateSocket("ws");
@@ -58,91 +55,15 @@ async function runStore (info, type) {
 			})
 		}
 		if (status) {
+			
 			let response = await CoCreateCrud.listenAsync(event)
 			console.log('type ------------------------- ', type)
 			console.log(response)
-			return response;
 		}
 	} catch (err) {
 		console.log(err);
-		return null;
 	}
 } 
-
-/**
- * update and create document by config crud
- */
-
-if (crud) {
-	crud.forEach(async (info) => {
-		await runStore(info, 'crud')
-	})
-}
-
-/**
- * Store html files by config sources
- **/
-if (sources) {
-	let new_sources_list = [];
-
-	async function runSources() {
-		for (let i = 0; i < sources.length; i++) {
-			const { entry, collection, document_id, key, data } = sources[i];
-			
-			let new_source = {...sources[i]};
-			let response = {};
-			if (entry) {
-				
-				try {
-					let read_type = 'utf8'
-					let mime_type = mime.lookup(entry) || 'text/html';
-					if (/^(image|audio|video)\/[-+.\w]+/.test(mime_type)) {
-						read_type = 'base64'
-					}
-					
-					let binary = fs.readFileSync(entry);
-					
-					let content = new Buffer(binary).toString(read_type);
-
-					if (content && key && collection) {
-						if (!data) data = {};
-						let storeData = {
-							[key]: content,
-							...data,
-						};
-						
-						response = await runStore({collection, document_id, data: storeData}, 'sources');
-					}
-				} catch (err) {
-					console.log(err)
-				}
-				if (response.document_id) {
-					new_source.document_id = response.document_id
-				}
-			}
-			new_sources_list.push(new_source)
-		}
-		return new_sources_list
-
-	}
-	
-	runSources().then((data) => {
-		
-		console.log(data)
-		let new_config = {
-			config: socketConfig,
-			sources: new_sources_list,
-			crud: crud,
-		}
-		
-		let write_str = JSON.stringify(new_config, null, 4)
-		write_str = "module.exports = " + write_str;
-
-		fs.writeFileSync(jsConfig, write_str);
-		// fs.writeFileSync(jsonConfig, write_str);
-
-	})
-}
 
 /**
  * Extract comments and store into db
@@ -172,14 +93,25 @@ if (extract) {
 /**
  * Store html files by config sources
  **/
+if (sources) {
+	sources.forEach(async ({entry, collection, document_id, key, data}) => {
+		if (!path) return;
 
+		let content = fs.readFileSync(path, 'utf8');
+
+		if (content && key && collection) {
+			if (!data) data = {};
+			let storeData = {
+				[key]: content,
+				...data
+			};
+			await runStore({collection, document_id, data: storeData}, 'sources');
+		}
+	})
+}
 
 console.log('end....')
 
 setTimeout(function(){
 	process.exit()
-}, 1000 * 60)
-
-
-
-
+}, 1000 * 30)
