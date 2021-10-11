@@ -117,7 +117,7 @@ const CoCreateAction = {
     var aTag = button.querySelector('a');
           
     if (aTag) {
-      CoCreateLogic.setLinkProcess(aTag)
+      CoCreateLogic.runLink(aTag)
     }
   }
 }
