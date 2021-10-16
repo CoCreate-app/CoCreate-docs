@@ -1,3 +1,10 @@
+## [1.2.40](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.2.39...v1.2.40) (2021-10-16)
+
+
+### Bug Fixes
+
+* updated crud depencency ([06e5245](https://github.com/CoCreate-app/CoCreate-docs/commit/06e5245f0538d684597f0b8c4069c5a1583796cd))
+
 ## [1.2.39](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.2.38...v1.2.39) (2021-10-16)
 
 
