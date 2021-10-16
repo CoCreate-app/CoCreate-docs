@@ -47,18 +47,15 @@ async function runStore (info, type) {
 			response = await CoCreateCrud.createDocument({
 				...commonParam,
 				...info,
-				event
 			})
 		} else {
 			response = await  CoCreateCrud.updateDocument({
 				...commonParam,
 				...info,
 				upsert: true,
-				event
 			})
 		}
 		if (response) {
-			// let response = await CoCreateCrud.listenAsync(event)
 			console.log('type ------------------------- ', type)
 			console.log(response)
 			return response;
