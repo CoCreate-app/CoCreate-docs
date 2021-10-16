@@ -41,24 +41,24 @@ const commonParam = {
 
 async function runStore (info, type) {
 	try {
-		let status = false;
-		const event = "docEvent" + Date.now()
+		let response = false;
+		// const event = "docEvent" + Date.now()
 		if (!info.document_id) {
-			status = CoCreateCrud.createDocument({
+			response = await CoCreateCrud.createDocument({
 				...commonParam,
 				...info,
 				event
 			})
 		} else {
-			status = CoCreateCrud.updateDocument({
+			response = await  CoCreateCrud.updateDocument({
 				...commonParam,
 				...info,
 				upsert: true,
 				event
 			})
 		}
-		if (status) {
-			let response = await CoCreateCrud.listenAsync(event)
+		if (response) {
+			// let response = await CoCreateCrud.listenAsync(event)
 			console.log('type ------------------------- ', type)
 			console.log(response)
 			return response;
