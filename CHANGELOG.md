@@ -1,3 +1,10 @@
+## [1.2.37](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.2.36...v1.2.37) (2021-10-16)
+
+
+### Bug Fixes
+
+* update crud-client ([c354d5f](https://github.com/CoCreate-app/CoCreate-docs/commit/c354d5fd4988978096addba2a4be45ef804638f0))
+
 ## [1.2.36](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.2.35...v1.2.36) (2021-10-15)
 
 
