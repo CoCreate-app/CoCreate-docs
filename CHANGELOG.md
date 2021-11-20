@@ -1,3 +1,10 @@
+## [1.2.55](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.2.54...v1.2.55) (2021-11-20)
+
+
+### Bug Fixes
+
+* updated script tags and link tags ([b0b4962](https://github.com/CoCreate-app/CoCreate-docs/commit/b0b4962ca6bd952557f11954e4f78aa57a1a91df))
+
 ## [1.2.54](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.2.53...v1.2.54) (2021-11-20)
 
 
