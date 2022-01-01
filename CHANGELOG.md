@@ -1,3 +1,10 @@
+## [1.2.64](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.2.63...v1.2.64) (2022-01-01)
+
+
+### Bug Fixes
+
+* removed data- from attributes ([e38bf37](https://github.com/CoCreate-app/CoCreate-docs/commit/e38bf372b043cade8315a0d6096098dfffd15598))
+
 ## [1.2.63](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.2.62...v1.2.63) (2021-12-15)
 
 
