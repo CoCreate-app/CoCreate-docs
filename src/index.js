@@ -99,7 +99,7 @@ if (sources) {
 					
 					let binary = fs.readFileSync(entry);
 					
-					let content = new Buffer(binary).toString(read_type);
+					let content = new Buffer.from(binary).toString(read_type);
 
 					if (content && key && collection) {
 						if (!data) data = {};
