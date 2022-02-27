@@ -1,3 +1,10 @@
+## [1.2.72](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.2.71...v1.2.72) (2022-02-27)
+
+
+### Bug Fixes
+
+* update param  module to component ([318db30](https://github.com/CoCreate-app/CoCreate-docs/commit/318db30b54fdca1fc51bacd738e7d1bc2d8b13e7))
+
 ## [1.2.71](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.2.70...v1.2.71) (2022-02-24)
 
 
