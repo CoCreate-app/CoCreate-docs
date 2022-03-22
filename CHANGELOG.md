@@ -1,3 +1,10 @@
+## [1.2.73](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.2.72...v1.2.73) (2022-03-22)
+
+
+### Bug Fixes
+
+* removed emit from message.send and message.listen ([b360fdc](https://github.com/CoCreate-app/CoCreate-docs/commit/b360fdcec89deda9b070534192cff16c3bf883b2))
+
 ## [1.2.72](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.2.71...v1.2.72) (2022-02-27)
 
 
