@@ -642,10 +642,8 @@ const CoCreate = {
     broadcast_sender: true/false
     
     rooms: [r1, r2],
-    emit: {
-      message': 'nice game',
-      data': 'let's play a game ....'
-    }
+    message': 'nice game',
+    data': 'let's play a game ....'
   })
  */
  sendMessage: function(data) {
