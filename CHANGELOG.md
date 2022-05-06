@@ -1,3 +1,10 @@
+## [1.2.74](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.2.73...v1.2.74) (2022-05-06)
+
+
+### Bug Fixes
+
+* update config organization_Id to organization_id ([355b486](https://github.com/CoCreate-app/CoCreate-docs/commit/355b4867b722a43366582b43fe047293a590e042))
+
 ## [1.2.73](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.2.72...v1.2.73) (2022-03-22)
 
 
