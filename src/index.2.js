@@ -29,14 +29,14 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 let socket = new CoCreateSocket("ws");
 CoCreateCrud.setSocket(socket);
 socket.create({
-	namespace: socketConfig.organization_Id,
+	namespace: socketConfig.organization_id,
 	room: null,
 	host: socketConfig.host
 })
 
 const commonParam = {
 	apiKey : socketConfig.apiKey,
-	organization_id : socketConfig.organization_Id,
+	organization_id : socketConfig.organization_id,
 	broadcast: false
 }
 

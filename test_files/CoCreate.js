@@ -208,7 +208,7 @@ const CoCreate = {
     return {
       "apiKey":           config.apiKey,
       "securityKey":      config.securityKey,
-      "organization_id":  config.organization_Id,
+      "organization_id":  config.organization_id,
     }
   },
   
@@ -298,7 +298,7 @@ const CoCreate = {
     let data = info.data || {};
     
     if (!data['organization_id']) {
-      data['organization_id'] = config.organization_Id
+      data['organization_id'] = config.organization_id
     }
 
     request_data['data'] = data;
@@ -321,7 +321,7 @@ const CoCreate = {
   },
   
   generateSocketClient: function (namespace, room) {
-    let ns = namespace || config.organization_Id
+    let ns = namespace || config.organization_id
     let rr = room || '';
     if (rr) {
       return `${ns}/${rr}`
@@ -460,7 +460,7 @@ const CoCreate = {
     if (!collection || !document_id || !name) {
       return null;
     }
-    return CoCreateYSocket.generateID(config.organization_Id, collection, document_id, name);
+    return CoCreateYSocket.generateID(config.organization_id, collection, document_id, name);
 
   },
 
@@ -748,5 +748,5 @@ const CoCreate = {
 }
 
 
-CoCreate.init('server.cocreate.app:8088', config.organization_Id);
+CoCreate.init('server.cocreate.app:8088', config.organization_id);
 
