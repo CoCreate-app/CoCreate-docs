@@ -257,7 +257,7 @@ const CoCreate = {
     }
   */
   
-  readDocumentList(info){
+  readDocuments(info){
     if( !info ) return;
     let request_data = this.getCommonParams();
     
@@ -268,7 +268,7 @@ const CoCreate = {
     request_data = {...request_data, ...info};
     
     console.log(request_data)
-    CoCreateSocket.send('readDocumentList', request_data);
+    CoCreateSocket.send('readDocuments', request_data);
   },
   
   
