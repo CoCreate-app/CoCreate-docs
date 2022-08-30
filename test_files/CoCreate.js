@@ -277,7 +277,7 @@ const CoCreate = {
     namespace:'',
     room:'',
     broadcast: true/false, (default=ture)
-    broadcast_sender: true/false, (default=true) 
+    broadcastSender: true/false, (default=true) 
     
     collection: "test123",
     data:{
@@ -312,8 +312,8 @@ const CoCreate = {
     // if (info['broadcast'] === undefined) {
     //   request_data['broadcast'] = true;
     // }
-    // if (info['broadcast_sender'] === undefined) {
-    //   request_data['broadcast_sender'] = true;
+    // if (info['broadcastSender'] === undefined) {
+    //   request_data['broadcastSender'] = true;
     // }
     
     const room = this.generateSocketClient(info.namespace, info.room);
@@ -366,8 +366,8 @@ const CoCreate = {
     // if (info['broadcast'] === undefined) {
     //   request_data['broadcast'] = true;
     // }
-    // if (info['broadcast_sender'] === undefined) {
-    //   request_data['broadcast_sender'] = true;
+    // if (info['broadcastSender'] === undefined) {
+    //   request_data['broadcastSender'] = true;
     // }
     
     const room = this.generateSocketClient(info.namespace, info.room);
@@ -416,7 +416,7 @@ const CoCreate = {
     namespace: '',
     room: '',
     broadcast: true/false,
-    broadcast_sender: true/false,
+    broadcastSender: true/false,
     
     collection: "module",
     document_id: "",
@@ -444,8 +444,8 @@ const CoCreate = {
     // if (info['broadcast'] === undefined) {
     //   request_data['broadcast'] = true;
     // }
-    // if (info['broadcast_sender'] === undefined) {
-    //   request_data['broadcast_sender'] = true;
+    // if (info['broadcastSender'] === undefined) {
+    //   request_data['broadcastSender'] = true;
     // }
     
     const room = this.generateSocketClient(info.namespace, info.room);
@@ -639,7 +639,7 @@ const CoCreate = {
     namespace: '',
     room: '',
     broadcast: true/false,
-    broadcast_sender: true/false
+    broadcastSender: true/false
     
     rooms: [r1, r2],
     message': 'nice game',
