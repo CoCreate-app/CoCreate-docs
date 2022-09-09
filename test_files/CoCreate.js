@@ -218,12 +218,12 @@ const CoCreate = {
       collection: "modules",
       element: "xxxx",
       metadata: "",
-      operator: {
+      filter: {
         fetch: {
           name: 'xxxx',
           value: 'xxxxx'
         },
-        filters: [{
+        query: [{
           name: 'field1',
           operator: "contain | range | eq | ne | lt | lte | gt | gte | in | nin",
           value: [v1, v2, ...]
@@ -234,7 +234,7 @@ const CoCreate = {
         }, {
           ....
         }],
-        orders: [{
+        sort: [{
           name: 'field-x',
           type: 1 | -1
         }],
@@ -247,7 +247,6 @@ const CoCreate = {
         count: 0 (integer)
       },
       
-      is_collection: true | false,
       //. case fetch document case
       created_ids : [id1, id2, ...],
       
