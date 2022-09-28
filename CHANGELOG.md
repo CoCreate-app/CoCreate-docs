@@ -1,3 +1,11 @@
+## [1.3.7](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.3.6...v1.3.7) (2022-09-28)
+
+
+### Bug Fixes
+
+* bump dependencies ([d3efed4](https://github.com/CoCreate-app/CoCreate-docs/commit/d3efed42fb0c14a3a42b958171c77295b01602f6))
+* crud.socket connection refactored ([ad913b7](https://github.com/CoCreate-app/CoCreate-docs/commit/ad913b749d76502a822ae321b3efdf9a55a4455d))
+
 ## [1.3.6](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.3.5...v1.3.6) (2022-09-01)
 
 
