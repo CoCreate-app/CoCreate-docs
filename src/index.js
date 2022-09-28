@@ -1,5 +1,4 @@
 const CoCreateCrud = require('@cocreate/crud-client')
-const CoCreateSocket = require('@cocreate/socket-client')
 const mime = require('mime-types')
 
 const fs = require('fs');
@@ -25,17 +24,15 @@ console.log(config)
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 
 /** init cocreatecrud and socket **/
-let socket = new CoCreateSocket("ws");
-CoCreateCrud.setSocket(socket);
-socket.create({
-	namespace: socketConfig.organization_id,
-	room: null,
+CoCreateCrud.socket.create({
+	organization_id: socketConfig.organization_id,
+	apiKey: socketConfig.apiKey,
 	host: socketConfig.host
 })
 
 const commonParam = {
-	apiKey : socketConfig.apiKey,
-	organization_id : socketConfig.organization_id,
+	apiKey: socketConfig.apiKey,
+	organization_id: socketConfig.organization_id,
 	broadcast: false
 }
 
