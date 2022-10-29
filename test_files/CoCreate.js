@@ -4,7 +4,7 @@
   updateDocument({
     collection: "test123",
     document_id: "document_id",
-    data:{
+    document:{
     	example: “some example can be html json etc”,
     	description:  “update documnets if document does not exist otherwise create”
     },
@@ -79,7 +79,7 @@
     broadcastSender: true/false,
     
     collection: "module",
-    document_id: "",
+    document: {_id: ""},
     element: “xxxx”,
     metadata: "xxxx"
   })
