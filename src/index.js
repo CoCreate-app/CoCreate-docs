@@ -77,8 +77,6 @@ if (sources) {
 			
 			let new_source = {...sources[i]};
 			new_source.document = { _id: '', ...new_source.document}
-			new_source.document._id = ''
-			delete new_source._id
 
 			let response = {};
 			if (entry) {

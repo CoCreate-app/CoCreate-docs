@@ -8,9 +8,9 @@ module.exports = {
         {
             "entry": "./docs/index.html",
             "collection": "files",
-            "document_id": "601460b19f64ba1680b8669b",
             "key": "src",
             "document": {
+                "_id": "601460b19f64ba1680b8669b",
                 "name": "index.html",
                 "path": "/docs/docs/index.html",
                 "domains": [
