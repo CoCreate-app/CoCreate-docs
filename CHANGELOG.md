@@ -1,3 +1,10 @@
+## [1.3.26](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.3.25...v1.3.26) (2022-11-21)
+
+
+### Bug Fixes
+
+* delete new_source._id ([edfc3b9](https://github.com/CoCreate-app/CoCreate-docs/commit/edfc3b93b75d3ba735e89d774fee60b4cd753fcb))
+
 ## [1.3.25](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.3.24...v1.3.25) (2022-11-21)
 
 
