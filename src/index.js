@@ -6,24 +6,18 @@ const path = require('path');
 let config;
 
 let jsConfig = path.resolve(process.cwd(), 'CoCreate.config.js');
-// let jsonConfig = path.resolve(process.cwd(), 'CoCreate.config.json')
 if (fs.existsSync(jsConfig))
 	config = require(jsConfig);
-// else if (fs.existsSync(jsonConfig)) {
-// 	config = require(jsonConfig)
-// }
 else {
-	process.exit()
 	console.log('config not found.')
+	process.exit()
 }
 
 const { crud, sources, config : socketConfig } = config;
 
-console.log(config)
-
+// ToDo: throwing error
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 
-/** init cocreatecrud and socket **/
 CoCreateCrud.socket.create({
 	organization_id: socketConfig.organization_id,
 	apiKey: socketConfig.apiKey,
@@ -33,14 +27,14 @@ CoCreateCrud.socket.create({
 const commonParam = {
 	apiKey: socketConfig.apiKey,
 	organization_id: socketConfig.organization_id,
+	host: socketConfig.host,
 	broadcast: false
 }
 
-async function runStore (info, type) {
+async function runStore(info, type) {
 	try {
 		let response = false;
-		// const event = "docEvent" + Date.now()
-		if (!info.document_id) {
+		if (!info.document._id) {
 			response = await CoCreateCrud.createDocument({
 				...commonParam,
 				...info,
@@ -49,12 +43,10 @@ async function runStore (info, type) {
 			response = await  CoCreateCrud.updateDocument({
 				...commonParam,
 				...info,
-				upsert: true,
+				upsert: true
 			})
 		}
 		if (response) {
-			console.log('type ------------------------- ', type)
-			console.log(response)
 			return response;
 		}
 	} catch (err) {
@@ -81,9 +73,13 @@ if (sources) {
 
 	async function runSources() {
 		for (let i = 0; i < sources.length; i++) {
-			const { entry, collection, document_id, key, data } = sources[i];
+			const { entry, collection, document_id, key, document } = sources[i];
 			
 			let new_source = {...sources[i]};
+			new_source.document = { _id: '', ...new_source.document}
+			new_source.document._id = ''
+			delete new_source._id
+
 			let response = {};
 			if (entry) {
 				
@@ -99,30 +95,37 @@ if (sources) {
 					let content = new Buffer.from(binary).toString(read_type);
 
 					if (content && key && collection) {
-						if (!data) data = {};
-						let storeData = {
-							[key]: content,
-							...data,
-						};
-						
-						response = await runStore({collection, document_id, data: storeData}, 'sources');
+						if (!document) document = {};
+						// let storeData = {
+						// 	[key]: content,
+						// 	...data,
+						// };
+						document[key] = content
+
+						// ToDo: can be removed once all configs are updated
+						if (!document._id && document_id)
+							document._id = document_id
+
+						response = await runStore({collection, document}, 'sources');
 					}
 				} catch (err) {
 					console.log(err)
 				}
-				if (response.document_id) {
-					new_source.document_id = response.document_id
+				if (response.document[0]._id) {
+					delete new_source.document_id
+					delete new_source.document.src
+					new_source.document._id = response.document[0]._id
 				}
 			}
 			new_sources_list.push(new_source)
 		}
+
+
 		return new_sources_list
 
 	}
 	
 	runSources().then((data) => {
-		
-		console.log(data)
 		let new_config = {
 			config: socketConfig,
 			sources: new_sources_list,
@@ -133,13 +136,8 @@ if (sources) {
 		write_str = "module.exports = " + write_str;
 
 		fs.writeFileSync(jsConfig, write_str);
-		// fs.writeFileSync(jsonConfig, write_str);
-
+		setTimeout(function(){
+			process.exit()
+		}, 2000)		
 	})
 }
-
-console.log('end....')
-
-setTimeout(function(){
-	process.exit()
-}, 1000 * 60)
