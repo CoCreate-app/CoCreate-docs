@@ -1,3 +1,11 @@
+## [1.3.20](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.3.19...v1.3.20) (2022-11-21)
+
+
+### Bug Fixes
+
+* renamed data.data to data.document ([6e893e4](https://github.com/CoCreate-app/CoCreate-docs/commit/6e893e433153129ca313ff11289a6750120bc3ab))
+* update crud functions to receive an array of objects as the response ([5cb5250](https://github.com/CoCreate-app/CoCreate-docs/commit/5cb525039d6b4ad0efd1ecd8bf2c47beb6d5db55))
+
 ## [1.3.19](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.3.18...v1.3.19) (2022-10-02)
 
 
