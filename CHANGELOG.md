@@ -1,3 +1,10 @@
+## [1.3.24](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.3.23...v1.3.24) (2022-11-21)
+
+
+### Bug Fixes
+
+* replaced document_id with document._id ([af9bcfe](https://github.com/CoCreate-app/CoCreate-docs/commit/af9bcfeb49a79be82347b91be213d60ee0f59fb2))
+
 ## [1.3.23](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.3.22...v1.3.23) (2022-11-21)
 
 
