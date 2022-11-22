@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.4.0...v1.4.1) (2022-11-22)
+
+
+### Bug Fixes
+
+* process.exit ([9d1551f](https://github.com/CoCreate-app/CoCreate-docs/commit/9d1551fadaf2e4fac7307b34fb934bdb53b58464))
+
 # [1.4.0](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.3.26...v1.4.0) (2022-11-22)
 
 
