@@ -1,3 +1,15 @@
+# [1.4.0](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.3.26...v1.4.0) (2022-11-22)
+
+
+### Bug Fixes
+
+* test ci ([ef0b213](https://github.com/CoCreate-app/CoCreate-docs/commit/ef0b21346e0a37ba8c707af63e1b3250455cce89))
+
+
+### Features
+
+* apply {{source}} to key where you want the source to be stored ([847edfe](https://github.com/CoCreate-app/CoCreate-docs/commit/847edfe45029c1d569a71e87efcaa4b5890eab72))
+
 ## [1.3.26](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.3.25...v1.3.26) (2022-11-21)
 
 
