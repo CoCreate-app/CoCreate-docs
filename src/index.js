@@ -73,6 +73,7 @@ if (sources) {
 					}
 				} catch (err) {
 					console.log(err)
+					process.exit()
 				}
 				if (response.document && response.document[0] && response.document[0]._id) {
 					new_source.document[Key] = '{{source}}'
