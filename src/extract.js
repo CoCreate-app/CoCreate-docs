@@ -3,7 +3,23 @@ const fs = require('fs');
 const path = require("path")
 const glob = require('glob');
 const parseHtmlComments = require('parse-html-comments')
+/**
+ * 	"extract": {
+		"directory": "./src/",
+		"extensions": [
+			"js",
+			"css",
+			"html"
+		],
+		"ignores": [
+			"node_modules",
+			"vendor",
+			"bower_components",
+			"archive"
+		]
+	}
 
+ */
 class ExtractComment {
 	constructor() {
 

@@ -1,69 +1,36 @@
 const CoCreateCrud = require('@cocreate/crud-client')
 const mime = require('mime-types')
-
 const fs = require('fs');
 const path = require('path');
-let config;
-
-let jsConfig = path.resolve(process.cwd(), 'CoCreate.config.js');
-if (fs.existsSync(jsConfig))
-	config = require(jsConfig);
-else {
-	console.log('config not found.')
-	process.exit()
-}
-
-const { crud, sources, config : socketConfig } = config;
 
 // ToDo: throwing error
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 
-CoCreateCrud.socket.create({
-	organization_id: socketConfig.organization_id,
-	apiKey: socketConfig.apiKey,
-	host: socketConfig.host
-})
-
-const commonParam = {
-	apiKey: socketConfig.apiKey,
-	organization_id: socketConfig.organization_id,
-	host: socketConfig.host,
-	broadcast: false
+let CoCreateConfig;
+let configFile = path.resolve(process.cwd(), 'CoCreate.config.js');
+if (fs.existsSync(configFile)) {
+	CoCreateConfig = require(configFile);
+} else {
+	console.log('config not found.')
+	process.exit()
 }
 
-async function runStore(info, type) {
-	try {
-		let response = false;
-		if (!info.document._id) {
-			response = await CoCreateCrud.createDocument({
-				...commonParam,
-				...info,
-			})
-		} else {
-			response = await  CoCreateCrud.updateDocument({
-				...commonParam,
-				...info,
-				upsert: true
-			})
-		}
-		if (response) {
-			return response;
-		}
-	} catch (err) {
-		console.log(err);
-		return null;
-	}
-} 
+const { config, sources, crud  } = CoCreateConfig;
+
+CoCreateCrud.socket.create(config)
+config.broadcast = false
+
 
 /**
  * update and create document by config crud
  */
 
-if (crud) {
-	crud.forEach(async (info) => {
-		await runStore(info, 'crud')
+ if (crud) {
+	crud.forEach(async (data) => {
+		await runStore(data, 'crud')
 	})
 }
+
 
 /**
  * Store html files by config sources
@@ -73,14 +40,12 @@ if (sources) {
 
 	async function runSources() {
 		for (let i = 0; i < sources.length; i++) {
-			const { entry, collection, document_id, key, document } = sources[i];
+			const { entry, collection, document } = sources[i];
 			
 			let new_source = {...sources[i]};
-			new_source.document = { _id: '', ...new_source.document}
-
+			let Key
 			let response = {};
 			if (entry) {
-				
 				try {
 					let read_type = 'utf8'
 					let mime_type = mime.lookup(entry) || 'text/html';
@@ -92,50 +57,74 @@ if (sources) {
 					
 					let content = new Buffer.from(binary).toString(read_type);
 
-					if (content && key && collection) {
-						if (!document) document = {};
-						// let storeData = {
-						// 	[key]: content,
-						// 	...data,
-						// };
-						document[key] = content
+					if (content && collection) {
+						if (!document) 
+							document = {};
+						else
+							for (const key of Object.keys(document)) {
+								if (document[key] == '{{source}}') {
+									document[key] = content
+									Key = key
+									break;
+								}
+							}
 
-						// ToDo: can be removed once all configs are updated
-						if (!document._id && document_id)
-							document._id = document_id
-
-						response = await runStore({collection, document}, 'sources');
+						response = await runStore({collection, document});
 					}
 				} catch (err) {
 					console.log(err)
 				}
-				if (response.document[0]._id) {
-					delete new_source.document_id
-					delete new_source.document.src
+				if (response.document && response.document[0] && response.document[0]._id) {
+					new_source.document[Key] = '{{source}}'
 					new_source.document._id = response.document[0]._id
+				} else {
+					console.log('_id could not be found')
+					process.exit()
 				}
 			}
 			new_sources_list.push(new_source)
 		}
 
-
 		return new_sources_list
-
 	}
 	
-	runSources().then((data) => {
+	runSources().then(() => {
 		let new_config = {
-			config: socketConfig,
+			config,
 			sources: new_sources_list,
 			crud: crud,
 		}
-		
+		delete new_config.config.broadcast
 		let write_str = JSON.stringify(new_config, null, 4)
 		write_str = "module.exports = " + write_str;
 
-		fs.writeFileSync(jsConfig, write_str);
+		fs.writeFileSync(configFile, write_str);
 		setTimeout(function(){
 			process.exit()
 		}, 2000)		
 	})
 }
+
+async function runStore(data) {
+	try {
+		let response;
+		if (!data.document._id) {
+			response = await CoCreateCrud.createDocument({
+				...config,
+				...data
+			})
+		} else {
+			response = await  CoCreateCrud.updateDocument({
+				...config,
+				...data,
+				upsert: true
+			})
+		}
+		if (response) {
+			return response;
+		}
+	} catch (err) {
+		console.log(err);
+		return null;
+	}
+} 
