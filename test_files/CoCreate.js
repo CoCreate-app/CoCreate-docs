@@ -12,16 +12,16 @@
   @value_end
   */
   updateDocument: function(info) {
-    if( !info || !info['document_id'] ) return;
+    if ( !info || !info['document_id'] ) return;
     
     let request_data = this.getCommonParams();
     request_data['collection'] = info['collection'] || 'module_activities';
     request_data['document_id'] = info['document_id'];
     
-    if( typeof info['data'] === 'object' ) request_data['set'] = info['data'];
-    if( Array.isArray(info['delete_fields']) ) request_data['unset'] = info['delete_fields'];
+    if ( typeof info['data'] === 'object' ) request_data['set'] = info['data'];
+    if ( Array.isArray(info['delete_fields']) ) request_data['unset'] = info['delete_fields'];
     
-    if(!request_data['set'] && !request_data['unset']) return;
+    if (!request_data['set'] && !request_data['unset']) return;
     
     request_data['element'] = info['element'];
     request_data['metadata'] = info['metadata'];
