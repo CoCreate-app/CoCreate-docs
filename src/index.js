@@ -17,7 +17,7 @@ if (fs.existsSync(configFile)) {
 
 setTimeout(function(){
 	process.exit()
-}, 600000)
+}, 120000)
 
 const { config, sources, crud  } = CoCreateConfig;
 
