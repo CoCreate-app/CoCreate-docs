@@ -1,3 +1,12 @@
+## [1.4.11](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.4.10...v1.4.11) (2022-12-02)
+
+
+### Bug Fixes
+
+* bump dependencies ([b0b6bce](https://github.com/CoCreate-app/CoCreate-docs/commit/b0b6bce197fa6b762b9ca4ed03090ca3a50945fd))
+* bump dependencies ([d162dce](https://github.com/CoCreate-app/CoCreate-docs/commit/d162dced0cc4415ac87af302c0e2eb8c9a92118e))
+* setTimout for 6 min if task not complete exit ([b12fe72](https://github.com/CoCreate-app/CoCreate-docs/commit/b12fe72e19a76a8bfd7e8f769fea014f1551222c))
+
 ## [1.4.10](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.4.9...v1.4.10) (2022-12-02)
 
 
