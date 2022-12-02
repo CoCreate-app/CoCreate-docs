@@ -15,6 +15,10 @@ if (fs.existsSync(configFile)) {
 	process.exit()
 }
 
+setTimeout(function(){
+	process.exit()
+}, 600000)
+
 const { config, sources, crud  } = CoCreateConfig;
 
 CoCreateCrud.socket.create(config)
