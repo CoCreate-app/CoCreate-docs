@@ -31,7 +31,7 @@ config.broadcast = false
 
  if (crud) {
 	crud.forEach(async (data) => {
-		await runStore(data, 'crud')
+		await runStore(data)
 	})
 }
 
