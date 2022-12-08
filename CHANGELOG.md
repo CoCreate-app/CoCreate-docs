@@ -1,3 +1,10 @@
+## [1.4.15](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.4.14...v1.4.15) (2022-12-08)
+
+
+### Bug Fixes
+
+* add mime-type ([d9ca225](https://github.com/CoCreate-app/CoCreate-docs/commit/d9ca22572e67aa9fdfaec4a4ad1a18341e11fad2))
+
 ## [1.4.14](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.4.13...v1.4.14) (2022-12-07)
 
 
