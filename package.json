@@ -2,11 +2,7 @@
   "name": "@cocreate/docs",
   "version": "1.4.26",
   "description": "Documentation generator ",
-  "keywords": [
-    "cocreate",
-    "lowcode",
-    "doc-generator"
-  ],
+  "keywords": ["cocreate", "lowcode", "doc-generator"],
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,13 +17,11 @@
   },
   "author": "CoCreate LLC",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/CoCreate-app/CoCreate-docs/issues"
-  },
+  "bugs": { "url": "https://github.com/CoCreate-app/CoCreate-docs/issues" },
   "homepage": "https://github.com/CoCreate-app/CoCreate-docs#readme",
   "dependencies": {
-    "@cocreate/crud-client": "^1.17.0",
-    "@cocreate/hosting": "^1.6.26",
+    "@cocreate/crud-client": "^1.17.2",
+    "@cocreate/hosting": "^1.6.27",
     "extract-comments": "^1.1.0",
     "glob": "^7.1.6",
     "mime-types": "^2.1.35",
