@@ -1,3 +1,15 @@
+# [1.5.0](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.4.28...v1.5.0) (2022-12-30)
+
+
+### Bug Fixes
+
+* update config sources to use template  braces with entry on src ([20b9ef7](https://github.com/CoCreate-app/CoCreate-docs/commit/20b9ef7c0894c8cad5c996fbc7bc5181c5b765b5))
+
+
+### Features
+
+* define directories to be saved in db. will includece nested files and directoriies ([b6d13f0](https://github.com/CoCreate-app/CoCreate-docs/commit/b6d13f021e822c28885a4cc17244626cdd52b36b))
+
 ## [1.4.28](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.4.27...v1.4.28) (2022-12-29)
 
 
