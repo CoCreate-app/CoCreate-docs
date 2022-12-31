@@ -19,7 +19,7 @@ setTimeout(function(){
 	process.exit()
 }, 120000)
 
-const { config, directories, sources  } = CoCreateConfig;
+const { config, directories, sources } = CoCreateConfig;
 
 CoCreateCrud.socket.create(config)
 config.broadcast = false
@@ -147,14 +147,14 @@ async function runFiles(directory, entry, exclude, parentDirectory = '') {
 
 
 function getSource(path, mimeType) {
-let readType = 'utf8'
-if (/^(image|audio|video)\/[-+.\w]+/.test(mimeType))
-	readType = 'base64'
+	let readType = 'utf8'
+	if (/^(image|audio|video)\/[-+.\w]+/.test(mimeType))
+		readType = 'base64'
 
-let binary = fs.readFileSync(path);
-let content = new Buffer.from(binary).toString(readType);
+	let binary = fs.readFileSync(path);
+	let content = new Buffer.from(binary).toString(readType);
 
-return content
+	return content
 }
 
 /**
@@ -264,13 +264,14 @@ async function run() {
 	
 	if (sources) {
 		let sources = await runSources()
-		let new_config = {
-			config,
-			directories,
-			sources,
-		}
-		delete new_config.config.broadcast
-		let write_str = JSON.stringify(new_config, null, 4)
+		let newConfig = { ...CoCreateConfig }
+		if (directories)
+			newConfig.directories = directories
+		
+		newConfig.sources = sources
+		
+		delete newConfig.config.broadcast
+		let write_str = JSON.stringify(newConfig, null, 4)
 		write_str = "module.exports = " + write_str;
 	
 		fs.writeFileSync(configFile, write_str);	
