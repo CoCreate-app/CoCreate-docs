@@ -1,3 +1,11 @@
+## [1.5.1](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.5.0...v1.5.1) (2022-12-31)
+
+
+### Bug Fixes
+
+* bump dependencies ([a72135a](https://github.com/CoCreate-app/CoCreate-docs/commit/a72135aa4ff18949ce751aa428175fa572e9c6b1))
+* if directories add to newConfig ([19d323f](https://github.com/CoCreate-app/CoCreate-docs/commit/19d323f2da6847ea88f5da7450e591acda98d354))
+
 # [1.5.0](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.4.28...v1.5.0) (2022-12-30)
 
 
