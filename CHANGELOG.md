@@ -1,3 +1,11 @@
+## [1.5.4](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.5.3...v1.5.4) (2023-01-05)
+
+
+### Bug Fixes
+
+* bump cdn to 1.39.4 ([844692d](https://github.com/CoCreate-app/CoCreate-docs/commit/844692d7c71414ba56bbfc0d721847eba79372a2))
+* bump dependencies ([4f3ca20](https://github.com/CoCreate-app/CoCreate-docs/commit/4f3ca20c69976c7fccc1148e06153be9c3f84a0e))
+
 ## [1.5.3](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.5.2...v1.5.3) (2023-01-01)
 
 
