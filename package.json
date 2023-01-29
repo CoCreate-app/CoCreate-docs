@@ -20,7 +20,7 @@
   "bugs": { "url": "https://github.com/CoCreate-app/CoCreate-docs/issues" },
   "homepage": "https://github.com/CoCreate-app/CoCreate-docs#readme",
   "dependencies": {
-    "@cocreate/crud-client": "^1.18.0",
+    "@cocreate/crud-client": "^1.18.2",
     "@cocreate/hosting": "^1.7.9",
     "extract-comments": "^1.1.0",
     "glob": "^7.1.6",
