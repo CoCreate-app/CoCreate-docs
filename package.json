@@ -1,6 +1,6 @@
 {
   "name": "@cocreate/docs",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "Documentation generator ",
   "keywords": [
     "cocreate",
@@ -26,8 +26,8 @@
   },
   "homepage": "https://github.com/CoCreate-app/CoCreate-docs#readme",
   "dependencies": {
-    "@cocreate/crud-client": "^1.19.1",
-    "@cocreate/hosting": "^1.8.1",
+    "@cocreate/crud-client": "^1.19.2",
+    "@cocreate/hosting": "^1.8.2",
     "extract-comments": "^1.1.0",
     "glob": "^7.1.6",
     "mime-types": "^2.1.35",
