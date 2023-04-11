@@ -1,3 +1,10 @@
+## [1.6.4](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.6.3...v1.6.4) (2023-04-11)
+
+
+### Bug Fixes
+
+* renamed domans to hosts ([1fa53a6](https://github.com/CoCreate-app/CoCreate-docs/commit/1fa53a6a1bc87d37de2e5e31000d287e0da37051))
+
 ## [1.6.3](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.6.2...v1.6.3) (2023-03-30)
 
 
