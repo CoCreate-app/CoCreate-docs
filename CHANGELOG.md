@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.7.1...v1.7.2) (2023-04-24)
+
+
+### Bug Fixes
+
+* workflow node version updated  16 ([b30ce90](https://github.com/CoCreate-app/CoCreate-docs/commit/b30ce9087801e37714545f87bd42340eca1b8a06))
+
 ## [1.7.1](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.7.0...v1.7.1) (2023-04-24)
 
 
