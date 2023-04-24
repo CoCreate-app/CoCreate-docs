@@ -1,3 +1,11 @@
+## [1.7.4](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.7.3...v1.7.4) (2023-04-24)
+
+
+### Bug Fixes
+
+* node version 16 in build action ([e6c77ce](https://github.com/CoCreate-app/CoCreate-docs/commit/e6c77ce931eb216738882fcce11f7ff79e0500c5))
+* node version 16 in build action ([6fdc154](https://github.com/CoCreate-app/CoCreate-docs/commit/6fdc1546f7927eb2f65435be2d57f12b55ac3439))
+
 ## [1.7.3](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.7.2...v1.7.3) (2023-04-24)
 
 
