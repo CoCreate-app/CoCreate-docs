@@ -49,7 +49,12 @@ jobs:
       IMAGE: cocreateapps/cocreate-docs
       VERSION: ${{ needs.release.outputs.new_release_version }}
     steps:
-    - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: setup nodejs
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
     - name: Login to DockerHub
       uses: docker/login-action@v1
       with:
