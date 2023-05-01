@@ -1,3 +1,10 @@
+## [1.7.8](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.7.7...v1.7.8) (2023-05-01)
+
+
+### Bug Fixes
+
+* update manifest.json to manifest.webmanifest ([3379e2c](https://github.com/CoCreate-app/CoCreate-docs/commit/3379e2cb256dd10ade533a5e00225befb7e668b0))
+
 ## [1.7.7](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.7.6...v1.7.7) (2023-05-01)
 
 
