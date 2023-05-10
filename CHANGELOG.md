@@ -1,3 +1,11 @@
+## [1.7.10](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.7.9...v1.7.10) (2023-05-10)
+
+
+### Bug Fixes
+
+* apikey renamed to key ([d79ac48](https://github.com/CoCreate-app/CoCreate-docs/commit/d79ac482c435d435dac3e1d86d8334ba3bf86cbb))
+* apikey renamed to key ([32e2eb7](https://github.com/CoCreate-app/CoCreate-docs/commit/32e2eb73c6232c0d6bea67898acee59444774faf))
+
 ## [1.7.9](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.7.8...v1.7.9) (2023-05-06)
 
 
