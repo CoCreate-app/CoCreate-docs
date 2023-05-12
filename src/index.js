@@ -3,7 +3,7 @@ const mime = require('mime-types')
 const fs = require('fs');
 const path = require('path');
 
-// ToDo: throwing error
+// TODO: throwing error
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 
 let CoCreateConfig;
