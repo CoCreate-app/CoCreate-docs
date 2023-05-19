@@ -1,3 +1,10 @@
+## [1.7.11](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.7.10...v1.7.11) (2023-05-19)
+
+
+### Bug Fixes
+
+* update packages to latest version. This commit updates various packages in the dependencies section of the package.json file to their latest published versions, thereby fixing multiple bugs and improving overall performance. ([9d90d0a](https://github.com/CoCreate-app/CoCreate-docs/commit/9d90d0a3eccff7b2453980e786017e2ef5bcf2fb))
+
 ## [1.7.10](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.7.9...v1.7.10) (2023-05-10)
 
 
