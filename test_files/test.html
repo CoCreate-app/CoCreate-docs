@@ -1,79 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>form.js</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>form.js</title>
-  
-  <link rel="stylesheet" href="https://cdn.cocreate.app/latest/CoCreate.min.css" type="text/css"/>
-  
+        <link
+            rel="stylesheet"
+            href="https://cdn.cocreate.app/latest/CoCreate.min.css"
+            type="text/css" />
 
-    <link rel="manifest" href="/manifest.webmanifest">
-</head>
-<style type="text/css">
-  /*.test{background-color:gray;}*/
-</style>
-<body class="padding-20px">
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
+    <style type="text/css">
+        /*.test{background-color:gray;}*/
+    </style>
+    <body class="padding-20px">
+        <button actions="export" template_id="datatable">Import</button>
 
-  
-  <button actions="export" template_id="datatable">Import</button>
-  
-  <button actions="import" collection="" pass_id="datatable">Export</button>
+        <button actions="import" collection="" pass_id="datatable">
+            Export
+        </button>
 
-  <script>
-    var CoCreateConfig = {
-      key: '2061acef-0451-4545-f754-60cf8160',
-            organization_id: '5ff747727005da1c272740ab'
-    }
-  </script>
- 
-  <!--
+        <script>
+            var CoCreateConfig = {
+                key: "2061acef-0451-4545-f754-60cf8160",
+                organization_id: "5ff747727005da1c272740ab",
+            };
+        </script>
+
+        <!--
 		@value_start	
-		<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>
+		<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"  ></script>
 		
 		Parse <testing class=""></testing>
 		testing...
 
 		@value_end
 	-->
-  
 
+        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
 
- 
-  <script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>
-  
-  
-  <script>
-    let button = document.getElementById('import_btn')
-    let selectedFile = null;
-    button.addEventListener('click', function() {
-      var input = document.createElement('input');
-      input.type = 'file';
-      
-      input.onchange = e => { 
-         var file = e.target.files[0];
-         selectedFile = e.target.files[0];
-         
-         CoCreate.importCollection({
-           collection: 'import_test',
-           file: file
-         })
-      }
-      
-      input.click();
-    })
-    
-    
-    let exportBtn = document.getElementById('export_btn')
-    exportBtn.addEventListener('click', function() {
-      CoCreate.exportCollection({
-        collection: 'users',
-        export_type: 'csv'
-      })
-    })
-  </script>
+        <script>
+            let button = document.getElementById("import_btn");
+            let selectedFile = null;
+            button.addEventListener("click", function () {
+                var input = document.createElement("input");
+                input.type = "file";
 
-</body>
+                input.onchange = (e) => {
+                    var file = e.target.files[0];
+                    selectedFile = e.target.files[0];
+
+                    CoCreate.importCollection({
+                        collection: "import_test",
+                        file: file,
+                    });
+                };
+
+                input.click();
+            });
+
+            let exportBtn = document.getElementById("export_btn");
+            exportBtn.addEventListener("click", function () {
+                CoCreate.exportCollection({
+                    collection: "users",
+                    export_type: "csv",
+                });
+            });
+        </script>
+    </body>
 </html>
