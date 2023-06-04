@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.8.0...v1.8.1) (2023-06-04)
+
+
+### Bug Fixes
+
+* Add validation to check if source file exists before reading it ([cd6cc48](https://github.com/CoCreate-app/CoCreate-docs/commit/cd6cc48e3265b86f2eb42fd7bde09926445c473b))
+
 # [1.8.0](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.7.16...v1.8.0) (2023-06-04)
 
 
