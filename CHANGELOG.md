@@ -1,3 +1,10 @@
+## [1.7.15](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.7.14...v1.7.15) (2023-06-04)
+
+
+### Bug Fixes
+
+* [@v3](https://github.com/v3) ([48c16ae](https://github.com/CoCreate-app/CoCreate-docs/commit/48c16aeac150c9b8d5ada89869f9539b891272c1))
+
 ## [1.7.14](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.7.13...v1.7.14) (2023-06-04)
 
 
