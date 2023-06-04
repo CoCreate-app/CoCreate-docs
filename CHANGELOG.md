@@ -1,3 +1,15 @@
+# [1.8.0](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.7.16...v1.8.0) (2023-06-04)
+
+
+### Bug Fixes
+
+* **automation:** syntax error ([79a04d1](https://github.com/CoCreate-app/CoCreate-docs/commit/79a04d1d02f1bf9ee3bff339af9763ac56341e61))
+
+
+### Features
+
+* Add environment variables for CoCreate API credentials ([6c71faa](https://github.com/CoCreate-app/CoCreate-docs/commit/6c71faa9f42a54adb36c49bc46e02259732112e8))
+
 ## [1.7.16](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.7.15...v1.7.16) (2023-06-04)
 
 
