@@ -199,6 +199,9 @@ async function runSources() {
                                 let entry = /{{\s*([\w\W]+)\s*}}/g.exec(variable);
                                 entry = entry[1].trim()
                                 if (entry) {
+                                    if (!fs.existsSync(entry))
+                                        continue
+
                                     let read_type = 'utf8'
                                     let mime_type = mime.lookup(entry) || 'text/html';
                                     if (/^(image|audio|video)\/[-+.\w]+/.test(mime_type)) {
