@@ -1,3 +1,10 @@
+## [1.8.3](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.8.2...v1.8.3) (2023-06-10)
+
+
+### Bug Fixes
+
+* import from @cocreate/file ([40598b8](https://github.com/CoCreate-app/CoCreate-docs/commit/40598b86d5ff06ff54f15027fa7d052c282d98c6))
+
 ## [1.8.2](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.8.1...v1.8.2) (2023-06-04)
 
 
