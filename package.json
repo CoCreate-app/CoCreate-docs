@@ -25,6 +25,9 @@
     "url": "https://github.com/CoCreate-app/CoCreate-docs/issues"
   },
   "homepage": "https://github.com/CoCreate-app/CoCreate-docs#readme",
+  "devDependencies": {
+    "@cocreate/cli": "^1.29.3"
+  },
   "dependencies": {
     "@cocreate/crud-client": "^1.21.10",
     "@cocreate/file": "^1.1.0",
