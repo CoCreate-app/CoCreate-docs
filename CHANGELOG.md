@@ -1,3 +1,10 @@
+## [1.8.10](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.8.9...v1.8.10) (2023-06-10)
+
+
+### Bug Fixes
+
+* test workflow ([3ffa9a5](https://github.com/CoCreate-app/CoCreate-docs/commit/3ffa9a5912accd126f755f86e221e2a2ae0e3a6b))
+
 ## [1.8.9](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.8.8...v1.8.9) (2023-06-10)
 
 
