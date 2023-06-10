@@ -78,4 +78,3 @@ jobs:
                 organization_id: ${{ secrets.COCREATE_ORGANIZATION_ID }}
                 key: ${{ secrets.COCREATE_KEY }}
                 host: ${{ secrets.COCREATE_HOST }}
-
