@@ -4,7 +4,7 @@ const path = require("path")
 const glob = require('glob');
 const parseHtmlComments = require('parse-html-comments')
 const crud = require('@cocreate/crud')
-const { config } = require('@cocreate/cli')
+const config = require('@cocreate/config')
 
 /**
  * 	"extract": {
