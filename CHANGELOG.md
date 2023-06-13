@@ -1,3 +1,10 @@
+## [1.8.24](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.8.23...v1.8.24) (2023-06-13)
+
+
+### Bug Fixes
+
+* config usage ([44b13fb](https://github.com/CoCreate-app/CoCreate-docs/commit/44b13fb50006e9a5613cc07ae108832b69589ed9))
+
 ## [1.8.23](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.8.22...v1.8.23) (2023-06-11)
 
 
