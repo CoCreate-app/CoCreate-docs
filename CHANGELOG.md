@@ -1,3 +1,10 @@
+## [1.8.29](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.8.28...v1.8.29) (2023-06-15)
+
+
+### Bug Fixes
+
+* Updatae [@cocreate](https://github.com/cocreate) dependnenies to the latest versions ([576d588](https://github.com/CoCreate-app/CoCreate-docs/commit/576d588911426135f92d27702425ead532d5089c))
+
 ## [1.8.28](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.8.27...v1.8.28) (2023-06-15)
 
 
