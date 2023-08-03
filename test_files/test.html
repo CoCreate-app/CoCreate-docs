@@ -19,9 +19,7 @@
     <body class="padding-20px">
         <button actions="import">Import</button>
 
-        <button actions="export" collection="" pass_id="datatable">
-            Export
-        </button>
+        <button actions="export" array="" pass_id="datatable">Export</button>
 
         <script>
             var CoCreateConfig = {
@@ -43,10 +41,10 @@
         <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
 
         <script>
-            let button = document.getElementById("import_btn");
+            let button = object.getElementById("import_btn");
             let selectedFile = null;
             button.addEventListener("click", function () {
-                var input = document.createElement("input");
+                var input = object.createElement("input");
                 input.type = "file";
 
                 input.onchange = (e) => {
@@ -54,7 +52,7 @@
                     selectedFile = e.target.files[0];
 
                     CoCreate.importCollection({
-                        collection: "import_test",
+                        array: "import_test",
                         file: file,
                     });
                 };
@@ -62,10 +60,10 @@
                 input.click();
             });
 
-            let exportBtn = document.getElementById("export_btn");
+            let exportBtn = object.getElementById("export_btn");
             exportBtn.addEventListener("click", function () {
                 CoCreate.exportCollection({
-                    collection: "users",
+                    array: "users",
                     export_type: "csv",
                 });
             });

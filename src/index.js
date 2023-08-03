@@ -28,7 +28,7 @@ class ExtractComment {
 
     }
 
-    run(filePath, collection, name) {
+    run(filePath, array, name) {
         let content = fs.readFileSync(filePath, 'utf8');
         let extension = path.extname(filePath)
 
@@ -45,7 +45,7 @@ class ExtractComment {
             let ret_value = this.extractValue(value)
             if (ret_value) {
                 docItems.push({
-                    collection,
+                    array,
                     data: {
                         [name]: ret_value,
                         extension,
