@@ -1,3 +1,18 @@
+# [1.9.0](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.8.30...v1.9.0) (2023-08-16)
+
+
+### Bug Fixes
+
+* crud attributes renamed ([3ec0ea4](https://github.com/CoCreate-app/CoCreate-docs/commit/3ec0ea4e557c11be25128434cd0e1c48f9fef19f))
+* replace -target -selector ([f2e6062](https://github.com/CoCreate-app/CoCreate-docs/commit/f2e6062b10e34d53f36a70476c4ab59063a9133f))
+
+
+### Features
+
+* Add and modify HTML, CSS, and JSON files ([357f54b](https://github.com/CoCreate-app/CoCreate-docs/commit/357f54bc3e1208f2cbce1924e77ab26e9ab99160))
+* name attribute and variable renamed to key ([290b3ed](https://github.com/CoCreate-app/CoCreate-docs/commit/290b3ed03ab933c29a93a28ff417e688bf494b02))
+* update template_id to render-selector attribute. update filter attributes to filter selector-attributes ([7b69997](https://github.com/CoCreate-app/CoCreate-docs/commit/7b69997e526f2c7ae24140a3822921e5e73695cb))
+
 ## [1.8.30](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.8.29...v1.8.30) (2023-06-16)
 
 
