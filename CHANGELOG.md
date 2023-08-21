@@ -1,3 +1,10 @@
+## [1.11.2](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.11.1...v1.11.2) (2023-08-21)
+
+
+### Bug Fixes
+
+* removed build as no webpack.config exist ([f189f23](https://github.com/CoCreate-app/CoCreate-docs/commit/f189f23ac83ef2982625b050e517d800f142ee1e))
+
 ## [1.11.1](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.11.0...v1.11.1) (2023-08-21)
 
 
