@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.12.0...v1.13.0) (2023-09-19)
+
+
+### Features
+
+* Update CoCreate dependencies to their latest versions ([c3f4838](https://github.com/CoCreate-app/CoCreate-docs/commit/c3f4838a2e165031d7cd5fcab4bc6eb06c494e76))
+
 # [1.12.0](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.11.3...v1.12.0) (2023-09-19)
 
 
