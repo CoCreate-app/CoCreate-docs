@@ -27,7 +27,7 @@
   "dependencies": {
     "@cocreate/config": "^1.5.2",
     "@cocreate/crud-client": "^1.25.1",
-    "@cocreate/file": "^1.7.2",
+    "@cocreate/file": "^1.7.3",
     "extract-comments": "^1.1.0",
     "glob": "^7.1.6",
     "parse-html-comments": "^1.3.1"
