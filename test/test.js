@@ -37,7 +37,7 @@ crud.send({
   broadcast: true/false,
   broadcastSender: true/false,
   
-  method: 'delete.object'
+  method: 'object.delete'
   array: "module",
   object: {_id: ""},
   element: “xxxx”,
