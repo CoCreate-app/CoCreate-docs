@@ -1,3 +1,12 @@
+## [1.13.7](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.13.6...v1.13.7) (2023-11-03)
+
+
+### Bug Fixes
+
+* favicon.ico path ([bfce518](https://github.com/CoCreate-app/CoCreate-docs/commit/bfce518ba0ee058e2a5d55e170848b92d5e716d3))
+* update dependencies to the lates versions ([2fff234](https://github.com/CoCreate-app/CoCreate-docs/commit/2fff2346aa68be03085ac9cd799bd17aea461540))
+* update method to use object.update etc ([dc49021](https://github.com/CoCreate-app/CoCreate-docs/commit/dc490216be3357bea0ea7423e2827a1767a42536))
+
 ## [1.13.6](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.13.5...v1.13.6) (2023-10-25)
 
 
