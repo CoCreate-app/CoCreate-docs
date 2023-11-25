@@ -1,3 +1,15 @@
+# [1.15.0](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.14.0...v1.15.0) (2023-11-25)
+
+
+### Bug Fixes
+
+* update nav, edit button and css path ([6f4a3e5](https://github.com/CoCreate-app/CoCreate-docs/commit/6f4a3e501bd95b59740523e502de391c2391e86d))
+
+
+### Features
+
+* upgrade dependencies for latest features and fixes ([ff47ddc](https://github.com/CoCreate-app/CoCreate-docs/commit/ff47ddc3cedbf1f42ea1a9ecc2acbc3326ae96a6))
+
 # [1.14.0](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.13.9...v1.14.0) (2023-11-19)
 
 
