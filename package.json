@@ -25,9 +25,9 @@
   },
   "homepage": "https://github.com/CoCreate-app/CoCreate-docs#readme",
   "dependencies": {
-    "@cocreate/config": "^1.10.0",
-    "@cocreate/crud-client": "^1.32.2",
-    "@cocreate/file": "^1.13.0",
+    "@cocreate/config": "^1.12.2",
+    "@cocreate/crud-client": "^1.33.8",
+    "@cocreate/file": "^1.17.1",
     "extract-comments": "^1.1.0",
     "glob": "^7.1.6",
     "parse-html-comments": "^1.3.1"
