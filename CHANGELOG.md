@@ -1,3 +1,12 @@
+## [1.18.1](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.18.0...v1.18.1) (2025-04-30)
+
+
+### Bug Fixes
+
+* update query attributes ([39a07a3](https://github.com/CoCreate-app/CoCreate-docs/commit/39a07a395d5b44b28c8d9caa855bfd2d07139076))
+* updated cocreate modules versions ([b49c85a](https://github.com/CoCreate-app/CoCreate-docs/commit/b49c85ab4df8911102236455dfd999760b203c84))
+* webpack.config and devdependencies ([597b4b5](https://github.com/CoCreate-app/CoCreate-docs/commit/597b4b52592ad6584da2a2dd60752ac448501b2c))
+
 # [1.18.0](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.17.5...v1.18.0) (2024-11-04)
 
 
