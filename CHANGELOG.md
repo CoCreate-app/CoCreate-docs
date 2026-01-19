@@ -1,3 +1,10 @@
+## [1.18.3](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.18.2...v1.18.3) (2026-01-19)
+
+
+### Bug Fixes
+
+* update worklow ([9921675](https://github.com/CoCreate-app/CoCreate-docs/commit/99216757e8828cbfee213cf1f72898f9daa65e2e))
+
 ## [1.18.2](https://github.com/CoCreate-app/CoCreate-docs/compare/v1.18.1...v1.18.2) (2025-05-01)
 
 
