@@ -31,5 +31,26 @@
     "extract-comments": "^1.1.0",
     "glob": "^7.1.6",
     "parse-html-comments": "^1.3.1"
+  },
+  "devDependencies": {
+    "@cocreate/webpack": "^1.4.3"
+  },
+  "allowScripts": {
+    "@cocreate/actions@1.21.4": true,
+    "@cocreate/api@1.22.5": true,
+    "@cocreate/config@1.13.4": true,
+    "@cocreate/crud-client@1.34.6": true,
+    "@cocreate/element-prototype@1.31.4": true,
+    "@cocreate/elements@1.42.9": true,
+    "@cocreate/filter@1.33.6": true,
+    "@cocreate/indexeddb@1.23.4": true,
+    "@cocreate/local-storage@1.16.5": true,
+    "@cocreate/observer@1.19.0": true,
+    "@cocreate/organizations@1.30.1": true,
+    "@cocreate/render@1.46.1": true,
+    "@cocreate/socket-client@1.40.5": true,
+    "@cocreate/utils@1.42.2": true,
+    "@cocreate/uuid@1.12.4": true,
+    "@cocreate/webpack@1.4.3": true
   }
 }
